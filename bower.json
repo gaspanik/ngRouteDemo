@@ -1,0 +1,20 @@
+{
+  "name": "scotch-ngroute",
+  "version": "0.0.0",
+  "authors": [
+    "cipher <gmgateway@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.24",
+    "angular-route": "~1.2.24"
+  }
+}

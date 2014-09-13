@@ -1,0 +1,25 @@
+<h1>Hello World</h1>
+<p class="lead">{{ message }}</p>
+
+<hr>
+
+<p><span class="label label-warning">Clean URLs</span> By default, Angular will throw a hash (#) into the URL.<br>
+To get rid of this, we will need to use $locationProvider to enable the HTML History API. This will remove the hash and make pretty URLs. </p>
+
+<pre><code>app.config(function($routeProvider<b>, $locationProvider</b>) {
+  $routeProvider
+    .when('/', {
+      templateUrl: 'pages/home.html',
+      controller: 'mainController'
+    })
+    .when('/about', {
+      templateUrl: 'pages/about.html',
+      controller: 'aboutController'
+    })
+    .when('/contact', {
+      templateUrl: 'pages/contact.html',
+      controller: 'contactController'
+    });
+  <b>$locationProvider.html5Mode(true);</b>
+});
+</code></pre>
