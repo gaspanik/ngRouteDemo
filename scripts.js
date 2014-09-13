@@ -21,12 +21,24 @@ app.config(function($routeProvider, $locationProvider) {
 
 app.controller('mainController', function($scope) {
   $scope.message = 'Everyone come and see my AngularJS.';
+  $scope.$parent.cond = {
+    pageTitle: '',
+    pageDesc: 'Hello my AngularJS.'
+  }
 });
 
 app.controller('aboutController', function($scope) {
   $scope.message = 'Hello, I am About Page.'
+  $scope.$parent.cond = {
+    pageTitle: '| About',
+    pageDesc: 'Hello, About page.'
+  }
 });
 
 app.controller('contactController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.';
+  $scope.$parent.cond = {
+    pageTitle: '| Contact',
+    pageDesc: 'Contact me, Hahaha.'
+  }
 });
