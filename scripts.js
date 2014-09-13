@@ -30,7 +30,7 @@ app.controller('mainController', function($scope) {
 app.controller('aboutController', function($scope) {
   $scope.message = 'Hello, I am About Page.'
   $scope.$parent.cond = {
-    pageTitle: '| About',
+    pageTitle: '| about',
     pageDesc: 'Hello, About page.'
   }
 });
@@ -38,7 +38,7 @@ app.controller('aboutController', function($scope) {
 app.controller('contactController', function($scope) {
   $scope.message = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.';
   $scope.$parent.cond = {
-    pageTitle: '| Contact',
+    pageTitle: '| contact',
     pageDesc: 'Contact me, Hahaha.'
   }
 });
