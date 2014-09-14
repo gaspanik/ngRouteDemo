@@ -8,9 +8,11 @@
   <form role="form">
     <legend>Form</legend>
     <div class="form-group">
-      <label for="demo">I am label</label>
-      <input type="text" class="form-control" name="demo" placeholder="Input field">
+      <label for="demo">Label Text</label>
+      <input type="text" ng-model="yourText" class="form-control" name="demo" placeholder="Input your text">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
+  <hr>
+  <p><span class="label label-default">input text:</span>&nbsp;<small>{{ yourText }}</small></p>
 </div>
